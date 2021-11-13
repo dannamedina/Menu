@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BINOMIO CUADRADO PERFECTO</title>
+</head>
+<body>
+<link rel="stylesheet" href="menu.css">
+
+<div class=barra>
+	<h2>Menu</h2><img src="img/icono.png">
+
+	<ul>
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="suma.html">Suma</a></li>
+		<li><a href="resta.html">Resta</a></li>
+		<li><a href="multiplicacion.html">Multiplicacion</a></li>
+		<li><a href="divicion.html">Divicion</a></li>
+		<li><a href="rc.html">Raiz cuadrada</a></li>
+		<li><a href="fg.html">Formula general</a></li>
+		<li><a href="bcp.html">Binomio cuadrado perfecto</a></li>
+	</ul>
+</div>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<h4>Ingresa los numeros a calcular el binomio cuadrado perfecto</h4>
+
+<br><br>
+<form action="">
+    <input type="text" placeholder="Ingresa un numero" id="Introduce un valor numerico:(a)"><br><br>
+
+    <input type="text" placeholder="Ingresa un numero" id="Introduce un valor numerico:(b)"><br><br>
+
+    <input type="button" value="binomio" onclick="alert( binomio(10,50));"> 
+</form>
+<script type="text/javascript">
+	var binomio = function (a, b) {
+        var a = parseFloat(document.getElementById("Introduce un valor numerico:(a)").value);
+		var b = parseFloat(document.getElementById("Introduce un valor numerico:(b)").value);
+
+
+		var resultado = (a*a)+(2*a*b)+(b*b);
+
+		return resultado;
+			}
+
+</script>
+
+</body>
+</html>

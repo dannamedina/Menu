@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html Lang="es">
+<head>
+    <meta charset="utf-8">
+    
+    <title>SUMA</title>
+
+</head>
+<body>
+
+<link rel="stylesheet" href="menu.css">
+
+<div class=barra>
+	<h2>Menu</h2><img src="img/icono.png">
+
+	<ul>
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="suma.html">Suma</a></li>
+		<li><a href="resta.html">Resta</a></li>
+		<li><a href="multiplicacion.html">Multiplicacion</a></li>
+		<li><a href="divicion.html">Divicion</a></li>
+		<li><a href="rc.html">Raiz cuadrada</a></li>
+		<li><a href="fg.html">Formula general</a></li>
+		<li><a href="bcp.html">Binomio cuadrado perfecto</a></li>
+	</ul>
+</div>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<h4>Ingresa los numeros a sumar</h4>
+
+<br><br>
+<form action="">
+    <input type="text" placeholder="Ingresa un numero" id="numero1"><br><br>
+
+    <input type="text" placeholder="Ingresa un numero" id="numero2"><br><br>
+
+    <input type="text" placeholder="Ingresa un numero" id="numero3"><br><br>
+
+    <input type="text" placeholder="Ingresa un numero" id="numero4"><br><br>
+
+    <input type="button" value="suma" onclick="alert( suma(10,50));"> 
+</form>
+
+<script>
+	var suma = function (numero1, numero2, numero3, numero4) {
+		var numero1 = parseFloat(document.getElementById("numero1").value);
+		var numero2 = parseFloat(document.getElementById("numero2").value);
+		var numero3 = parseFloat(document.getElementById("numero3").value);
+		var numero4 = parseFloat(document.getElementById("numero4").value);
+
+		var resultado = numero1 + numero2 + numero3 + numero4;
+
+		return resultado;
+			}
+</script>
+</body>
+</html>

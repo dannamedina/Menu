@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RAIZ CUADRADA</title>
+</head>
+<body>
+<link rel="stylesheet" href="menu.css">
+
+<div class=barra>
+	<h2>Menu</h2><img src="img/icono.png">
+
+	<ul>
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="suma.html">Suma</a></li>
+		<li><a href="resta.html">Resta</a></li>
+		<li><a href="multiplicacion.html">Multiplicacion</a></li>
+		<li><a href="divicion.html">Divicion</a></li>
+		<li><a href="rc.html">Raiz cuadrada</a></li>
+		<li><a href="fg.html">Formula general</a></li>
+		<li><a href="bcp.html">Binomio cuadrado perfecto</a></li>
+	</ul>
+</div>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<h4>Ingresa el numero a sacar la raiz cuadrada</h4>
+
+<br><br>
+<form action="">
+    <input type="text" placeholder="Ingresa un numero" id="numero"><br><br>
+
+    <input type="button" value="Raiz" onclick="alert( Raiz(10,50));"> 
+</form>
+
+<script>
+	var Raiz = function (numero1) {
+		var numero = parseFloat(document.getElementById("numero").value);
+
+		var resultado = Math.sqrt(numero);
+
+		return resultado;
+			}
+</script>
+
+</body>
+</html>
